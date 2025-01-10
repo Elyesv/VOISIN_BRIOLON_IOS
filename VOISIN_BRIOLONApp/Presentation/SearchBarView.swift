@@ -30,7 +30,7 @@ struct SearchBarView: View {
                     }
                 )
                 .onSubmit {
-                    onSearch() // Appelle l'action lorsque l'utilisateur soumet la recherche
+                    onSearch()
                 }
         }
         .padding(.horizontal)

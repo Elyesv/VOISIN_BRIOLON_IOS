@@ -1,16 +1,16 @@
 import Foundation
 
 class MealRepositoryImplementation: MealRepository {
-    private let mealDataSource: MealDataSource
+    private let dataSource: MealDataSource
+    private let mapper: MealMapper
 
-    init(mealDataSource: MealDataSource) {
-        self.mealDataSource = mealDataSource
+    init(dataSource: MealDataSource, mapper: MealMapper) {
+        self.dataSource = dataSource
+        self.mapper = mapper
     }
 
     func searchMeals(query: String) async throws -> [Meal] {
-        guard let responseDTO = try await mealDataSource.searchMeals(query: query).meals else {
-            return [] // Retourne un tableau vide si aucune donnée
-        }
-        return responseDTO.map { MealMapper.mapMealResponseToDomain(input: $0) }
+        let dto = try await dataSource.searchMeals(query: query)
+        return mapper.mapMealResponseToDomain(dto: dto)
     }
 }

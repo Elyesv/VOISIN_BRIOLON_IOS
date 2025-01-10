@@ -14,14 +14,10 @@ class SearchViewModel: ObservableObject {
         isLoading = true
         do {
             let result = try await mealSearchInteractor.searchMeals(query: query)
-            DispatchQueue.main.async {
-                self.meals = result
-                self.isLoading = false
-            }
+            self.meals = result
+            self.isLoading = false
         } catch {
-            DispatchQueue.main.async {
-                self.isLoading = false
-            }
+            self.isLoading = false
             print("Error searching meals: \(error)")
         }
     }

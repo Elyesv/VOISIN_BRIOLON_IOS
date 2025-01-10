@@ -7,8 +7,10 @@ struct MealEntryDTO: Decodable {
     let strCategory: String?
     let strArea: String?
     let strInstructions: String?
+    let strIngredients: String?
 }
 
 struct MealResponseDTO: Decodable {
     let meals: [MealEntryDTO]?
 }
+

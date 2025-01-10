@@ -7,4 +7,5 @@ struct Meal: Identifiable {
     let category: String
     let area: String
     let instructions: String
+    let ingredients: String
 }

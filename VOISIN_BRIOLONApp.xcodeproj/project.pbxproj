@@ -26,6 +26,11 @@
 		E894EC922D311D7100EF49DD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC912D311D7100EF49DD /* SearchBarView.swift */; };
 		E894EC942D31220100EF49DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC932D31220100EF49DD /* ContentView.swift */; };
 		E894EC962D3123C700EF49DD /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC952D3123C700EF49DD /* MealDetailView.swift */; };
+		E894EC992D3129B500EF49DD /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E894EC972D3129B500EF49DD /* CoreDataModel.xcdatamodeld */; };
+		E894EC9C2D312A2800EF49DD /* WeekMeal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC9A2D312A2800EF49DD /* WeekMeal+CoreDataClass.swift */; };
+		E894EC9D2D312A2800EF49DD /* WeekMeal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC9B2D312A2800EF49DD /* WeekMeal+CoreDataProperties.swift */; };
+		E894EC9F2D312A4300EF49DD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC9E2D312A4300EF49DD /* CoreDataManager.swift */; };
+		E894ECA12D312AD400EF49DD /* WeekMealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894ECA02D312AD400EF49DD /* WeekMealsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +54,11 @@
 		E894EC912D311D7100EF49DD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		E894EC932D31220100EF49DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E894EC952D3123C700EF49DD /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		E894EC982D3129B500EF49DD /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		E894EC9A2D312A2800EF49DD /* WeekMeal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeekMeal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E894EC9B2D312A2800EF49DD /* WeekMeal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeekMeal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E894EC9E2D312A4300EF49DD /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E894ECA02D312AD400EF49DD /* WeekMealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekMealsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +113,15 @@
 		E840A1C22D31124500A75EA3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E894EC9A2D312A2800EF49DD /* WeekMeal+CoreDataClass.swift */,
+				E894EC9B2D312A2800EF49DD /* WeekMeal+CoreDataProperties.swift */,
 				E840A1C62D3112D200A75EA3 /* MealDTO.swift */,
 				E840A1C82D3112DA00A75EA3 /* MealDataSource.swift */,
 				E840A1CA2D3112E200A75EA3 /* MealMapper.swift */,
 				E840A1CC2D3112EA00A75EA3 /* MealRepositoryImplementation.swift */,
 				E894EC862D31184900EF49DD /* MealSearchInteractorImplementation.swift */,
+				E894EC972D3129B500EF49DD /* CoreDataModel.xcdatamodeld */,
+				E894EC9E2D312A4300EF49DD /* CoreDataManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -130,6 +144,7 @@
 				E840A1D62D31131C00A75EA3 /* SearchView.swift */,
 				E894EC912D311D7100EF49DD /* SearchBarView.swift */,
 				E894EC952D3123C700EF49DD /* MealDetailView.swift */,
+				E894ECA02D312AD400EF49DD /* WeekMealsView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -221,13 +236,18 @@
 				E894EC922D311D7100EF49DD /* SearchBarView.swift in Sources */,
 				E840A1B52D310E6300A75EA3 /* VOISIN_BRIOLONAppApp.swift in Sources */,
 				E840A1C72D3112D200A75EA3 /* MealDTO.swift in Sources */,
+				E894EC9C2D312A2800EF49DD /* WeekMeal+CoreDataClass.swift in Sources */,
+				E894EC9D2D312A2800EF49DD /* WeekMeal+CoreDataProperties.swift in Sources */,
 				E894EC872D31184900EF49DD /* MealSearchInteractorImplementation.swift in Sources */,
 				E840A1D12D31130000A75EA3 /* MealSearchInteractor.swift in Sources */,
 				E894EC8C2D3119FD00EF49DD /* SearchBar.swift in Sources */,
+				E894EC9F2D312A4300EF49DD /* CoreDataManager.swift in Sources */,
 				E894EC8A2D31197B00EF49DD /* LoadingCell.swift in Sources */,
 				E894EC962D3123C700EF49DD /* MealDetailView.swift in Sources */,
 				E840A1D52D31131500A75EA3 /* SearchViewModel.swift in Sources */,
 				E840A1CD2D3112EA00A75EA3 /* MealRepositoryImplementation.swift in Sources */,
+				E894ECA12D312AD400EF49DD /* WeekMealsView.swift in Sources */,
+				E894EC992D3129B500EF49DD /* CoreDataModel.xcdatamodeld in Sources */,
 				E840A1D32D31130700A75EA3 /* MealRepository.swift in Sources */,
 				E840A1CB2D3112E200A75EA3 /* MealMapper.swift in Sources */,
 				E840A1D72D31131C00A75EA3 /* SearchView.swift in Sources */,
@@ -434,6 +454,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E894EC972D3129B500EF49DD /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E894EC982D3129B500EF49DD /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = E894EC982D3129B500EF49DD /* CoreDataModel.xcdatamodel */;
+			name = CoreDataModel.xcdatamodeld;
+			path = "/Applications/MAMP/htdocs/Sites/École/A5/IOS/VOISIN_BRIOLONApp/VOISIN_BRIOLONApp/Data/CoreDataModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E840A1A92D310E6300A75EA3 /* Project object */;
 }
