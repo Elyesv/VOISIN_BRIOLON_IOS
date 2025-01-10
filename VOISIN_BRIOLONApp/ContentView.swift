@@ -5,7 +5,8 @@ struct ContentView: View {
         NavigationView {
             SearchView(mealSearchInteractor: MealSearchInteractorImplementation(
                 mealRepository: MealRepositoryImplementation(
-                    mealDataSource: MealDataSource()
+                    dataSource: MealDataSource(),
+                    mapper: MealMapper()
                 )
             ))
         }

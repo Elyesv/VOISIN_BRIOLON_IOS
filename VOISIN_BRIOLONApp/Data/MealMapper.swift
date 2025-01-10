@@ -1,14 +1,23 @@
 import Foundation
 
 class MealMapper {
-    static func mapMealResponseToDomain(input: MealEntryDTO) -> Meal {
-        return Meal(
-            id: input.idMeal ?? UUID().uuidString,
-            name: input.strMeal ?? "Inconnu",
-            imageUrl: input.strMealThumb ?? "",
-            category: input.strCategory ?? "Non classé",
-            area: input.strArea ?? "Non",
-            instructions: input.strInstructions ?? "Pas d'instructions"
-        )
+    func mapMealResponseToDomain(responseDTO: MealResponseDTO) -> [Meal] {
+        guard let meals = responseDTO.meals else { return [] } 
+        return meals.map { mealDTO in
+            Meal(
+                id: mealDTO.idMeal ?? "",
+                name: mealDTO.strMeal ?? "",
+                imageUrl: mealDTO.strMealThumb ?? "",
+                category: mealDTO.strCategory ?? "",
+                area: mealDTO.strArea ?? "",
+                instructions: mealDTO.strInstructions ?? "",
+                ingredients: mealDTO.strIngredients ?? ""
+            )
+        }
     }
 }
+
+
+
+
+
