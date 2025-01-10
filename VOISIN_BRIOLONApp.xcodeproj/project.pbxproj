@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E840A1B52D310E6300A75EA3 /* VOISIN_BRIOLONAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1B42D310E6300A75EA3 /* VOISIN_BRIOLONAppApp.swift */; };
+		E840A1B92D310E6500A75EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E840A1B82D310E6500A75EA3 /* Assets.xcassets */; };
+		E840A1BC2D310E6500A75EA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E840A1BB2D310E6500A75EA3 /* Preview Assets.xcassets */; };
+		E840A1C72D3112D200A75EA3 /* MealDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1C62D3112D200A75EA3 /* MealDTO.swift */; };
+		E840A1C92D3112DA00A75EA3 /* MealDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1C82D3112DA00A75EA3 /* MealDataSource.swift */; };
+		E840A1CB2D3112E200A75EA3 /* MealMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1CA2D3112E200A75EA3 /* MealMapper.swift */; };
+		E840A1CD2D3112EA00A75EA3 /* MealRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1CC2D3112EA00A75EA3 /* MealRepositoryImplementation.swift */; };
+		E840A1CF2D3112F900A75EA3 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1CE2D3112F900A75EA3 /* Meal.swift */; };
+		E840A1D12D31130000A75EA3 /* MealSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1D02D31130000A75EA3 /* MealSearchInteractor.swift */; };
+		E840A1D32D31130700A75EA3 /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1D22D31130700A75EA3 /* MealRepository.swift */; };
+		E840A1D52D31131500A75EA3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1D42D31131500A75EA3 /* SearchViewModel.swift */; };
+		E840A1D72D31131C00A75EA3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840A1D62D31131C00A75EA3 /* SearchView.swift */; };
+		E894EC872D31184900EF49DD /* MealSearchInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC862D31184900EF49DD /* MealSearchInteractorImplementation.swift */; };
+		E894EC8A2D31197B00EF49DD /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC892D31197B00EF49DD /* LoadingCell.swift */; };
+		E894EC8C2D3119FD00EF49DD /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC8B2D3119FD00EF49DD /* SearchBar.swift */; };
+		E894EC8E2D311A1200EF49DD /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC8D2D311A1200EF49DD /* MealCell.swift */; };
+		E894EC922D311D7100EF49DD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC912D311D7100EF49DD /* SearchBarView.swift */; };
+		E894EC942D31220100EF49DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC932D31220100EF49DD /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E840A1B12D310E6300A75EA3 /* VOISIN_BRIOLONApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOISIN_BRIOLONApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E840A1B42D310E6300A75EA3 /* VOISIN_BRIOLONAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOISIN_BRIOLONAppApp.swift; sourceTree = "<group>"; };
+		E840A1B82D310E6500A75EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E840A1BB2D310E6500A75EA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E840A1C62D3112D200A75EA3 /* MealDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDTO.swift; sourceTree = "<group>"; };
+		E840A1C82D3112DA00A75EA3 /* MealDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDataSource.swift; sourceTree = "<group>"; };
+		E840A1CA2D3112E200A75EA3 /* MealMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMapper.swift; sourceTree = "<group>"; };
+		E840A1CC2D3112EA00A75EA3 /* MealRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepositoryImplementation.swift; sourceTree = "<group>"; };
+		E840A1CE2D3112F900A75EA3 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		E840A1D02D31130000A75EA3 /* MealSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSearchInteractor.swift; sourceTree = "<group>"; };
+		E840A1D22D31130700A75EA3 /* MealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepository.swift; sourceTree = "<group>"; };
+		E840A1D42D31131500A75EA3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E840A1D62D31131C00A75EA3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E894EC862D31184900EF49DD /* MealSearchInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSearchInteractorImplementation.swift; sourceTree = "<group>"; };
+		E894EC892D31197B00EF49DD /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		E894EC8B2D3119FD00EF49DD /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E894EC8D2D311A1200EF49DD /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		E894EC912D311D7100EF49DD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		E894EC932D31220100EF49DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E840A1AE2D310E6300A75EA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E840A1A82D310E6300A75EA3 = {
+			isa = PBXGroup;
+			children = (
+				E840A1B32D310E6300A75EA3 /* VOISIN_BRIOLONApp */,
+				E840A1B22D310E6300A75EA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E840A1B22D310E6300A75EA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E840A1B12D310E6300A75EA3 /* VOISIN_BRIOLONApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E840A1B32D310E6300A75EA3 /* VOISIN_BRIOLONApp */ = {
+			isa = PBXGroup;
+			children = (
+				E840A1C42D31125400A75EA3 /* Presentation */,
+				E840A1C32D31124E00A75EA3 /* Domain */,
+				E840A1C22D31124500A75EA3 /* Data */,
+				E840A1B42D310E6300A75EA3 /* VOISIN_BRIOLONAppApp.swift */,
+				E894EC932D31220100EF49DD /* ContentView.swift */,
+				E840A1B82D310E6500A75EA3 /* Assets.xcassets */,
+				E840A1BA2D310E6500A75EA3 /* Preview Content */,
+			);
+			path = VOISIN_BRIOLONApp;
+			sourceTree = "<group>";
+		};
+		E840A1BA2D310E6500A75EA3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E840A1BB2D310E6500A75EA3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E840A1C22D31124500A75EA3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E840A1C62D3112D200A75EA3 /* MealDTO.swift */,
+				E840A1C82D3112DA00A75EA3 /* MealDataSource.swift */,
+				E840A1CA2D3112E200A75EA3 /* MealMapper.swift */,
+				E840A1CC2D3112EA00A75EA3 /* MealRepositoryImplementation.swift */,
+				E894EC862D31184900EF49DD /* MealSearchInteractorImplementation.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E840A1C32D31124E00A75EA3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E840A1CE2D3112F900A75EA3 /* Meal.swift */,
+				E840A1D22D31130700A75EA3 /* MealRepository.swift */,
+				E840A1D02D31130000A75EA3 /* MealSearchInteractor.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E840A1C42D31125400A75EA3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E894EC882D31197100EF49DD /* Components */,
+				E840A1D42D31131500A75EA3 /* SearchViewModel.swift */,
+				E840A1D62D31131C00A75EA3 /* SearchView.swift */,
+				E894EC912D311D7100EF49DD /* SearchBarView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E894EC882D31197100EF49DD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E894EC892D31197B00EF49DD /* LoadingCell.swift */,
+				E894EC8B2D3119FD00EF49DD /* SearchBar.swift */,
+				E894EC8D2D311A1200EF49DD /* MealCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E840A1B02D310E6300A75EA3 /* VOISIN_BRIOLONApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E840A1BF2D310E6500A75EA3 /* Build configuration list for PBXNativeTarget "VOISIN_BRIOLONApp" */;
+			buildPhases = (
+				E840A1AD2D310E6300A75EA3 /* Sources */,
+				E840A1AE2D310E6300A75EA3 /* Frameworks */,
+				E840A1AF2D310E6300A75EA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VOISIN_BRIOLONApp;
+			productName = VOISIN_BRIOLONApp;
+			productReference = E840A1B12D310E6300A75EA3 /* VOISIN_BRIOLONApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E840A1A92D310E6300A75EA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E840A1B02D310E6300A75EA3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = E840A1AC2D310E6300A75EA3 /* Build configuration list for PBXProject "VOISIN_BRIOLONApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E840A1A82D310E6300A75EA3;
+			productRefGroup = E840A1B22D310E6300A75EA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E840A1B02D310E6300A75EA3 /* VOISIN_BRIOLONApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E840A1AF2D310E6300A75EA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E840A1BC2D310E6500A75EA3 /* Preview Assets.xcassets in Resources */,
+				E840A1B92D310E6500A75EA3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E840A1AD2D310E6300A75EA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E894EC8E2D311A1200EF49DD /* MealCell.swift in Sources */,
+				E840A1C92D3112DA00A75EA3 /* MealDataSource.swift in Sources */,
+				E894EC942D31220100EF49DD /* ContentView.swift in Sources */,
+				E840A1CF2D3112F900A75EA3 /* Meal.swift in Sources */,
+				E894EC922D311D7100EF49DD /* SearchBarView.swift in Sources */,
+				E840A1B52D310E6300A75EA3 /* VOISIN_BRIOLONAppApp.swift in Sources */,
+				E840A1C72D3112D200A75EA3 /* MealDTO.swift in Sources */,
+				E894EC872D31184900EF49DD /* MealSearchInteractorImplementation.swift in Sources */,
+				E840A1D12D31130000A75EA3 /* MealSearchInteractor.swift in Sources */,
+				E894EC8C2D3119FD00EF49DD /* SearchBar.swift in Sources */,
+				E894EC8A2D31197B00EF49DD /* LoadingCell.swift in Sources */,
+				E840A1D52D31131500A75EA3 /* SearchViewModel.swift in Sources */,
+				E840A1CD2D3112EA00A75EA3 /* MealRepositoryImplementation.swift in Sources */,
+				E840A1D32D31130700A75EA3 /* MealRepository.swift in Sources */,
+				E840A1CB2D3112E200A75EA3 /* MealMapper.swift in Sources */,
+				E840A1D72D31131C00A75EA3 /* SearchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E840A1BD2D310E6500A75EA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E840A1BE2D310E6500A75EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E840A1C02D310E6500A75EA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VOISIN_BRIOLONApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "elyes.VOISIN-BRIOLONApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E840A1C12D310E6500A75EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VOISIN_BRIOLONApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "elyes.VOISIN-BRIOLONApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E840A1AC2D310E6300A75EA3 /* Build configuration list for PBXProject "VOISIN_BRIOLONApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E840A1BD2D310E6500A75EA3 /* Debug */,
+				E840A1BE2D310E6500A75EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E840A1BF2D310E6500A75EA3 /* Build configuration list for PBXNativeTarget "VOISIN_BRIOLONApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E840A1C02D310E6500A75EA3 /* Debug */,
+				E840A1C12D310E6500A75EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E840A1A92D310E6300A75EA3 /* Project object */;
+}
