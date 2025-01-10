@@ -6,7 +6,9 @@ class MealMapper {
             id: input.idMeal ?? UUID().uuidString,
             name: input.strMeal ?? "Inconnu",
             imageUrl: input.strMealThumb ?? "",
-            category: input.strCategory ?? "Non classé"
+            category: input.strCategory ?? "Non classé",
+            area: input.strArea ?? "Non",
+            instructions: input.strInstructions ?? "Pas d'instructions"
         )
     }
 }

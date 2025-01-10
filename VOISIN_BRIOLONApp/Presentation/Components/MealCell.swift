@@ -4,30 +4,35 @@ struct MealCell: View {
     let meal: Meal
 
     var body: some View {
-        HStack {
-            AsyncImage(url: URL(string: meal.imageUrl)) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 80, height: 80)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-            } placeholder: {
-                Rectangle()
-                    .foregroundColor(Color(.systemGray5))
-                    .frame(width: 80, height: 80)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-            }
+        NavigationLink(destination: MealDetailView(meal: meal)) {
+            VStack(alignment: .leading) {
+                AsyncImage(url: URL(string: meal.imageUrl)) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(height: 100)
+                        .clipped()
+                } placeholder: {
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Color.gray.opacity(0.3))
+                        .frame(height: 100)
+                }
+                .cornerRadius(8)
 
-            VStack(alignment: .leading, spacing: 4) {
                 Text(meal.name)
                     .font(.headline)
-                Text(meal.category)
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+                    .lineLimit(1)
+
+                HStack {
+                    Text(meal.category)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    Text(meal.area)
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
             }
-        
-            .padding(.leading, 8)
+            .padding(.vertical, 8)
         }
-        .padding(.vertical, 4)
     }
 }

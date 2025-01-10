@@ -8,20 +8,22 @@ struct SearchView: View {
     }
 
     var body: some View {
-        VStack {
-            SearchBarView(searchText: $viewModel.searchText, onSearch: {
-                Task {
-                    await viewModel.searchMeals(query: viewModel.searchText)
-                }
-            })
+        NavigationStack {
+            VStack {
+                SearchBarView(searchText: $viewModel.searchText, onSearch: {
+                    Task {
+                        await viewModel.searchMeals(query: viewModel.searchText)
+                    }
+                })
 
-            if viewModel.isLoading {
-                ForEach(0..<3, id: \.self) { _ in
-                    LoadingCell()
-                }
-            } else {
-                List(viewModel.meals) { meal in
-                    MealCell(meal: meal)
+                if viewModel.isLoading {
+                    ForEach(0..<3, id: \.self) { _ in
+                        LoadingCell()
+                    }
+                } else {
+                    List(viewModel.meals) { meal in
+                        MealCell(meal: meal)
+                    }
                 }
             }
         }

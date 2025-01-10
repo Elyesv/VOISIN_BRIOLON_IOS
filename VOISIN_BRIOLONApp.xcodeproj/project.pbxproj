@@ -25,6 +25,7 @@
 		E894EC8E2D311A1200EF49DD /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC8D2D311A1200EF49DD /* MealCell.swift */; };
 		E894EC922D311D7100EF49DD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC912D311D7100EF49DD /* SearchBarView.swift */; };
 		E894EC942D31220100EF49DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC932D31220100EF49DD /* ContentView.swift */; };
+		E894EC962D3123C700EF49DD /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894EC952D3123C700EF49DD /* MealDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		E894EC8D2D311A1200EF49DD /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		E894EC912D311D7100EF49DD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		E894EC932D31220100EF49DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E894EC952D3123C700EF49DD /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				E840A1D42D31131500A75EA3 /* SearchViewModel.swift */,
 				E840A1D62D31131C00A75EA3 /* SearchView.swift */,
 				E894EC912D311D7100EF49DD /* SearchBarView.swift */,
+				E894EC952D3123C700EF49DD /* MealDetailView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				E840A1D12D31130000A75EA3 /* MealSearchInteractor.swift in Sources */,
 				E894EC8C2D3119FD00EF49DD /* SearchBar.swift in Sources */,
 				E894EC8A2D31197B00EF49DD /* LoadingCell.swift in Sources */,
+				E894EC962D3123C700EF49DD /* MealDetailView.swift in Sources */,
 				E840A1D52D31131500A75EA3 /* SearchViewModel.swift in Sources */,
 				E840A1CD2D3112EA00A75EA3 /* MealRepositoryImplementation.swift in Sources */,
 				E840A1D32D31130700A75EA3 /* MealRepository.swift in Sources */,
